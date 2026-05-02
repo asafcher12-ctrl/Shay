@@ -1,27 +1,68 @@
-# TaskFlow ✓
+# המגדלאור – ליאור מזומן צ'רקס 🌸
 
-A clean, dark task manager built with React. Supports priorities, filters, and local storage persistence.
+אתר לייעוץ הורים, ייעוץ שינה וקבוצות הורים.
 
-## Features
-- Add tasks with **high / mid / low** priority
-- Filter by All / Active / Done
-- Edit tasks by double-clicking
-- Tasks saved to localStorage (persist across reloads)
-- Progress bar
-- Clean dark UI
+## טכנולוגיות
 
-## Run locally
+- **React 18** + **Vite**
+- **React Router v6** – ניווט בין דפים
+- **Tailwind CSS** – עיצוב
+- **Lucide React** – אייקונים
+
+## התחלה מהירה
 
 ```bash
+# 1. התקנת dependencies
 npm install
-npm start
+
+# 2. הרצה בסביבת פיתוח
+npm run dev
+
+# 3. בנייה לפרודקשן
+npm run build
 ```
 
-## Deploy to Vercel
+## מבנה הפרויקט
 
-1. Push this repo to GitHub
-2. Go to [vercel.com](https://vercel.com) → New Project
-3. Import your GitHub repo
-4. Vercel auto-detects Create React App — click **Deploy**
+```
+src/
+├── assets/          # תמונות (לוגו, ליאור, ידיים)
+├── components/
+│   ├── Header.jsx
+│   ├── Footer.jsx
+│   ├── ContactForm.jsx
+│   ├── WhatsAppFloat.jsx
+│   └── Ic.jsx       # אייקוני SVG
+├── pages/
+│   ├── HomePage.jsx
+│   ├── AboutPage.jsx
+│   ├── ServicesPage.jsx
+│   ├── SleepPage.jsx
+│   ├── BlogPage.jsx
+│   └── ContactPage.jsx
+├── App.jsx
+├── main.jsx
+└── index.css
+```
 
-That's it! 🚀
+## דיפלוי ל-GitHub Pages
+
+```bash
+# התקן את הכלי
+npm install --save-dev gh-pages
+
+# הוסף ל-package.json תחת "scripts":
+"deploy": "gh-pages -d dist"
+
+# בנה ועלה
+npm run build && npm run deploy
+```
+
+## פלטת הצבעים
+
+| משתנה | ערך | שימוש |
+|-------|-----|--------|
+| `primary` | `#f78da7` | ורוד ראשי |
+| `dark`    | `#cf2e2e` | אדום accent |
+| `light`   | `#fff0f4` | רקע סקשנים |
+| `white`   | `#ffffff` | רקע כללי |
