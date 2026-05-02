@@ -1,0 +1,10 @@
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Segoe UI', Tahoma, sans-serif;
+  direction: rtl;
+  background: #f0f7f4;
+  color: #2d4a3e;
+  -webkit-tap-highlight-color: transparent;
+}
+button { font-family: inherit; }
+textarea { font-family: inherit; }

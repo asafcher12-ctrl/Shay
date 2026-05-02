@@ -1,27 +1,34 @@
-# TaskFlow ✓
+# 🌸 המרחב שלי
 
-A clean, dark task manager built with React. Supports priorities, filters, and local storage persistence.
+אפליקציית ניהול ויסות חושי ושפה לילדה בת 5.
 
-## Features
-- Add tasks with **high / mid / low** priority
-- Filter by All / Active / Done
-- Edit tasks by double-clicking
-- Tasks saved to localStorage (persist across reloads)
-- Progress bar
-- Clean dark UI
+## מה יש באפליקציה
 
-## Run locally
+### 🎮 אזור הילדה
+- **חברים מאותה משפחה** – מציאת 2 תמונות מאותה קטגוריה (עם מנגנון המתנה של 5 שניות)
+- **יוצרת הסיפורים** – בחירת 3 תמונות מתוך 10 ובניית סיפור
+- טיימר 10 דקות עם מסך "לילה טוב" בסיום
+
+### 👨‍👩‍👧 אזור הורים
+- **יומן יומי** – מדד ויסות, הערות, מעקב התפרצויות
+- **תוכנית יומית** – פעילות יומית מתחלפת מתוך 10 פעילויות עם הסברים
+- **גרף התקדמות** – סיכום שבועי של ויסות ופעילויות
+
+## התקנה
 
 ```bash
 npm install
 npm start
 ```
 
-## Deploy to Vercel
+## העלאה ל-Vercel
 
-1. Push this repo to GitHub
-2. Go to [vercel.com](https://vercel.com) → New Project
-3. Import your GitHub repo
-4. Vercel auto-detects Create React App — click **Deploy**
+1. העלי את הקוד ל-GitHub
+2. היכנסי ל-[vercel.com](https://vercel.com)
+3. לחצי "Import Project" → בחרי את ה-repository
+4. Vercel יזהה אוטומטית את הפרויקט ויבנה אותו
 
-That's it! 🚀
+## טכנולוגיות
+- React 18
+- localStorage לשמירת נתונים
+- ממשק בעברית (RTL)
