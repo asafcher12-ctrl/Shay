@@ -4,6 +4,8 @@ import ParentJournal from './components/ParentJournal';
 import DailyPlan from './components/DailyPlan';
 import WeeklyChart from './components/WeeklyChart';
 import GameSpace from './components/GameSpace';
+import StoryGame from './components/StoryGame';
+import ImageGallery from './components/ImageGallery';
 
 export default function App() {
   const [screen, setScreen] = useState('home');
@@ -33,6 +35,8 @@ export default function App() {
       {screen === 'plan' && <DailyPlan nav={nav} />}
       {screen === 'chart' && <WeeklyChart nav={nav} weekData={weekData} logs={logs} />}
       {screen === 'game' && <GameSpace nav={nav} />}
+      {screen === 'story' && <StoryGame nav={nav} />}
+      {screen === 'imageGallery' && <ImageGallery nav={nav} />}
     </div>
   );
 }

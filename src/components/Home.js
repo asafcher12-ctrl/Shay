@@ -48,11 +48,20 @@ export default function Home({ nav }) {
           </div>
           <div style={s.arrow}>←</div>
         </div>
-        <div style={s.bigCard} onClick={() => nav('game')}>
+        <div style={s.bigCard} onClick={() => nav('story')}>
           <div style={{ ...s.cardIcon, background: '#fff0e8' }}>📖⭐</div>
           <div>
             <div style={{ fontSize: 17, fontWeight: 800, color: '#2d4a3e', marginBottom: 3 }}>יוצרת הסיפורים</div>
-            <div style={{ fontSize: 12, color: '#7aab96', lineHeight: 1.5 }}>בחרי 3 תמונות מתוך 10<br />וסדרי אותן לסיפור שלך</div>
+            <div style={{ fontSize: 12, color: '#7aab96', lineHeight: 1.5 }}>בחרי 3 תמונות מתוך 100<br />וסדרי אותן לסיפור שלך</div>
+          </div>
+          <div style={s.arrow}>←</div>
+        </div>
+
+        <div style={s.bigCard} onClick={() => nav('imageGallery')}>
+          <div style={{ ...s.cardIcon, background: '#f0e8ff' }}>🖼️📸</div>
+          <div>
+            <div style={{ fontSize: 17, fontWeight: 800, color: '#2d4a3e', marginBottom: 3 }}>ניהול תמונות</div>
+            <div style={{ fontSize: 12, color: '#7aab96', lineHeight: 1.5 }}>העלאה ויצירת תמונות<br />לספריה שלך</div>
           </div>
           <div style={s.arrow}>←</div>
         </div>
@@ -65,7 +74,6 @@ export default function Home({ nav }) {
             { icon: '📋', label: 'יומן יומי', sub: 'מדד ויסות\nוהערות', screen: 'journal' },
             { icon: '🌿', label: 'תוכנית יומית', sub: 'פעילות היום\nעם הסברים', screen: 'plan' },
             { icon: '📊', label: 'גרף התקדמות', sub: 'סיכום שבועי\nומגמות', screen: 'chart' },
-            { icon: '💡', label: 'מידע ועזרה', sub: 'איך משתמשים\nבאפליקציה', screen: 'help' },
           ].map(c => (
             <div key={c.label} style={s.smallCard} onClick={() => nav(c.screen)}>
               <div style={s.smallIcon}>{c.icon}</div>
